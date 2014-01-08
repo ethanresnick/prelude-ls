@@ -31,7 +31,7 @@ each = (f, object) -->
   object
 
 map = (f, object) -->
-  {[k, f x] for k, x of object}
+  {[k, f(x, k)] for k, x of object}
 
 compact = (object) -->
   {[k, x] for k, x of object when x}
